@@ -1,0 +1,95 @@
+.our-offer-area {
+    background: #222;
+}
+.section-gap {
+    padding: 120px 0;
+}
+.single-circle {
+    text-align: center;
+}
+.single-circle .single-item {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.single-circle .progressBar {
+    display: table;
+    height: 170px;
+    position: absolute;
+    width: 170px;
+}
+ .single-circle .progressBar-contentCircle {
+    display: table;
+    height: 170px;
+    position: absolute;
+    width: 170px;
+}
+.single-circle .progressBar-percentage {
+    background: #3face4;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 25px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 24px;
+    transition: all .3s ease 0s;
+}
+.single-circle h4 {
+    margin-top: 35px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.main-title h1 {
+    margin-bottom: 20px;
+    font-weight: 100;
+    line-height: 29px;
+}
+.our-offer-area .main-title p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.main-title p {
+    max-width: 630px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+}
+.our-offer-area .main-title .offer-btn {
+    border: 1px solid #fff;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+.our-offer-area .main-title .quote-btn {
+    background: #fff;
+    color: #222;
+    border: 1px solid #fff;
+}
+.primary-btn {
+    line-height: 42px;
+    padding: 0 30px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    position: relative;
+}

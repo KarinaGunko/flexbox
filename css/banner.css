@@ -1,0 +1,40 @@
+.home-banner-area {
+	background-image: url(../image/banner.webp);
+	background-size: cover;
+}	
+.fullscreen {
+    height: 616px;
+}
+.banner-content h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 77px!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header-btn {
+    border: 1px solid transparent;
+    background-color: #3face4;
+}
+.primary-btn {
+    line-height: 42px;
+    padding: 0 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    position: relative;
+}
+.banner-content a:hover {
+	border: solid #fff;
+	background-color: revert;
+	color: #fff;
+}

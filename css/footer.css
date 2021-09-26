@@ -1,0 +1,136 @@
+.footer-area {
+    background-color: #222;
+}
+
+.footer-area .footer-nav li {
+    margin-top: 8px;
+    list-style: none;
+}
+.footer-area .footer-nav li a {
+    color: #777;
+}
+.footer-area .footer-nav a {
+    text-decoration: none;
+    outline: 0;
+}
+.footer-text i {
+    color: #3face4;
+}
+.form-group {
+    width: 100%;
+}
+.fa {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.single-footer-widget .primary-btn {
+    background: #3face4;
+    border-radius: 23px;
+}
+.single-footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.newsletter h6 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.newsletter p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.primary-btn:hover {
+    color: #fff;
+}
+.primary-btn span {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-footer-widget .info {
+    position: absolute;
+    margin-top: 122px;
+    color: #fff;
+    font-size: 12px;
+}
+.form-group input {
+    width: 100%;
+    padding: 2px;
+    border-radius: 28px;
+}
+.instafeed {
+    margin: -5px;
+}
+.instafeed li {
+    overflow: hidden;
+    width: 25%;
+}
+.instafeed li img {
+    margin: 5px;
+}
+.footer-text i {
+    color: #3face4;
+}
+.fa {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-heart-o:before {
+    content: "\f08a";
+}
+.footer-bottom {
+    padding-top: 80px;
+}
+.fa-heart-o:before {
+    content: "\f08a";
+}
+.footer-bottom {
+    padding-top: 80px;
+}
+.footer-social a:hover {
+    background-color: #3face4;
+}
+.footer-social a {
+    background-color: #111111;
+    color: #fff;
+    padding: 12px;
+    width: 45px;
+    margin: 5px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.footer-text a {
+    color: #3face4;
+    text-decoration: none;
+}
+
+.single-footer-widget input {
+    line-height: 38px;
+    border: none;
+    background: #fff;
+    font-weight: 300;
+    border-radius: 20px;
+    color: #777;
+    padding-left: 20px;
+    width: 100%;
+}

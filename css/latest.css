@@ -1,0 +1,38 @@
+.section-gap {
+    padding: 120px 0;
+}
+.main-title h1 {
+    margin-bottom: 20px;
+    font-weight: 100;
+    line-height: 29px!important;
+}
+.main-title p {
+    max-width: 630px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+}
+.cared-body {
+	padding: 30px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    
+}
+.card-title a {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 16px;
+    transition: all .3s ease 0s;
+    color: #000;
+    text-decoration: none;
+}
+.single-news:hover  a {
+    color: #3face4;
+}

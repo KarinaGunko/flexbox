@@ -1,0 +1,40 @@
+.single-blog h4 {
+    margin-bottom: 12px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-weight: 100;
+    font-family: system-ui;
+}
+.single-blog .date {
+    background-color: #000;
+    color: #fff;
+    font-weight: 100;
+    padding: 2px 15px;
+    width: 115px;
+    text-align: center;
+    margin-top: 20px;
+}
+.single-blog a {
+    color: #222;
+    text-decoration: none;
+}
+
+.lnr {
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.lnr-heart:before {
+    content: "\e813";
+}
+.section-gap {
+    padding: 120px 0;
+}
