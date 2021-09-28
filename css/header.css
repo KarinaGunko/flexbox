@@ -20,6 +20,9 @@ body {
 .header-top .header-top-left a {
     margin-right: 30px;
 }
+.header-top-right {
+    padding-left: 235px;
+}
 .header-top a {
     color: #222;
     font-weight: 500;
@@ -44,9 +47,6 @@ body {
 .main-menu {
     padding: 26px;
 }
-.nav-menu-container {
-    position: fixed;
-}
 .nav-menu a i {
     color: #cccccc;
 }
@@ -56,39 +56,43 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
-/**/
-.nav-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.main-menu {
     display: flex;
+    flex-wrap: nowrap;
 }
-.nav-menu li {
-    margin-left: 20px;
+/**/
+.navbar {
+    width: 100%;
 }
-.nav-menu a {
-    padding: 38.5px 8px;
-    text-decoration: none;
-    display: inline-block;
-    color: #222;
-    font-weight: 500;
-    font-size: 12px;
+.navbar-brand {
+    padding-right: 530px;
+}
+.navbar-nav a {
     text-transform: uppercase;
-    outline: none;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #3face4;
+    font-weight: 700;
+}
+.bg-light {
+    background-color: #fff!important;
 }
 /**/
 .pos-f-t {
     display: none;
 }
-@media screen and (max-width: 800px) {
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+@media screen and (max-width: 1300px) {
     .header-top {
         display: none;
     }
     .banner-content h1 {
         margin-left: 30px;
-    }
-    .pos-f-t {
-        display: inline-block;
     }
     .nw-btn {
         margin-top: 15px;
@@ -124,4 +128,14 @@ hr {
     .single-footer-widget {
         margin-left: 30px;
     }
+    .navbar-brand  {
+       padding-right: 300px;
+    }
+    .navbar {
+    position: relative;
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
   }
