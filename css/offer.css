@@ -1,9 +1,6 @@
 .our-offer-area {
     background: #222;
 }
-.section-gap {
-    padding: 120px 0;
-}
 .single-circle {
     text-align: center;
 }
@@ -23,6 +20,10 @@
     height: 170px;
     position: absolute;
     width: 170px;
+}
+.main-title h1 {
+    font-size: 30px;
+    color: #ccc;
 }
 .single-circle .progressBar-percentage {
     background: #3face4;
@@ -48,25 +49,13 @@
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
-.main-title h1 {
-    margin-bottom: 20px;
-    font-weight: 100;
-    line-height: 29px;
-}
 .our-offer-area .main-title p {
     font-size: 14px;
     margin-bottom: 40px;
 }
-.main-title p {
-    max-width: 630px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 26px;
-}
 .our-offer-area .main-title .offer-btn {
     border: 1px solid #fff;
 }
-
 svg {
     overflow: hidden;
     vertical-align: middle;

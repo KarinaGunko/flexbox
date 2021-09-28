@@ -1,10 +1,8 @@
 .section-gap {
     padding: 120px 0;
 }
-.main-title h1 {
-    margin-bottom: 20px;
-    font-weight: 100;
-    line-height: 29px!important;
+.text h1 {
+    color: #000;
 }
 .main-title p {
     max-width: 630px;

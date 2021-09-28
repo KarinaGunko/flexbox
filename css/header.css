@@ -45,7 +45,11 @@ body {
     margin-left: 15px;
 }
 .main-menu {
-    padding: 26px;
+    width: 100%;
+    padding: 26px 0;
+}
+.main-menu .row {
+    width: 100%;
 }
 .nav-menu a i {
     color: #cccccc;
@@ -56,15 +60,14 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
-.main-menu {
-    display: flex;
-}
+
 /**/
 .navbar {
     width: 100%;
 }
-.navbar-brand {
-    padding-right: 530px;
+
+.navbar-collapse {
+    justify-content: flex-end;
 }
 .navbar-nav a {
     text-transform: uppercase;
@@ -93,15 +96,18 @@ hr {
     .banner-content h1 {
         margin-left: 30px;
     }
+    .navbar-nav {
+        margin-left: 15px;
+    }
     .nw-btn {
         margin-top: 15px;
+    }
+    .banner-content a {
+        margin-left: 35px;
     }
     .nav-menu-container ul a {
         color: #fff;
         z-index: 1;
-    }
-    .recent-completed-project img{
-        margin: 30px;
     }
     .thumb img {
         width: 100%;
@@ -109,14 +115,19 @@ hr {
     .date {
         margin-left: 0;
     }
+    .text-left h1 {
+        font-size: 32px;
+        color: #fff;
+        margin-top: 100px;
+    }
+    .single-footer-widget h6 {
+        color: #fff;
+    }
     .main-title {
         margin-left: 41px;
     }
     .latest-blog-area {
         margin: 50px;
-    }
-    .latest-news-area {
-        margin-left: 40px;
     }
     .nw-btn {
         margin-top: 13px;
@@ -124,17 +135,15 @@ hr {
     .projects_item img {
         padding: 15px;
     }
-    .single-footer-widget {
-        margin-left: 30px;
-    }
     .navbar-brand  {
        padding-right: 300px;
     }
     .navbar {
-    position: relative;
-    display: flex!important;
-    align-items: center;
-    justify-content: space-between;
-    padding: .5rem 1rem;
+        position: relative;
+        display: flex!important;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+  
 }
-  }
