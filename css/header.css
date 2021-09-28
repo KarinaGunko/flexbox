@@ -58,7 +58,6 @@ hr {
 }
 .main-menu {
     display: flex;
-    flex-wrap: nowrap;
 }
 /**/
 .navbar {
