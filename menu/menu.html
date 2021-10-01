@@ -16,28 +16,24 @@
 	    <div class="dropdown">
        <button class="button" title="More">MORE <i class="fa fa-caret-down"></i></button>
 		     <div class="dropdown-menu">
-		        <li> <a href="#" class="">Merchandise</a></li>
-		        <li><a href="#" class="">Extras</a></li>
-		        <li><a href="#" class="">Media</a></li>
+		         <li><a href="#" class="">Merchandise</a></li>
+		         <li><a href="#" class="">Extras</a></li>
+		         <li><a href="#" class="">Media</a></li>
 		     </div>
         </div>
+       	 <a  href="javascript:void(0)" class="large"><i class="fa fa-search"></i></a>
 	</div>
+</div>
+<div id="navDemo" class="w3-show hide w3-hide-large">
+  <a href="#" onclick="myFunction()">BAND</a>
+  <a href="#" onclick="myFunction()">TOUR</a>
+  <a href="#" onclick="myFunction()">CONTACT</a>
+  <a href="#" onclick="myFunction()">MERCH</a>
 </div>
 <script>
 var myIndex = 0;
 carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
 
 function myFunction() {
   var x = document.getElementById("navDemo");
