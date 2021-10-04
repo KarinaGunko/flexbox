@@ -2,55 +2,49 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
 <div class="top">
 	<div class="bar">
-		 <a class="bar-item" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	    <a href="#" class="item">HOME</a>
-	    <a href="#" class="">BAND</a>
-	    <a href="#" class="">TOUR</a>
-	    <a href="#" class="">CONTACT</a>
+	    <a href="#" class="item-menu">BAND</a>
+	    <a href="#" class="item-menu">TOUR</a>
+	    <a href="#" class="item-menu">CONTACT</a>
 	    <div class="dropdown">
-       <button class="button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+       		<button class="button item-menu" title="More">MORE <i class="fa fa-caret-down"></i></button>
 		     <div class="dropdown-menu">
 		         <li><a href="#" class="">Merchandise</a></li>
 		         <li><a href="#" class="">Extras</a></li>
 		         <li><a href="#" class="">Media</a></li>
 		     </div>
         </div>
-       	 <a  href="javascript:void(0)" class="large"><i class="fa fa-search"></i></a>
+       	 <a  href="javascript:void(0)" class="search"><i class="fa fa-search"></i></a>
+       	  <a class="menu-toggle" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	</div>
 </div>
-<div id="navDemo" class="w3-show hide w3-hide-large">
+<div id="mob-menu" class="hide mobile-menu">
   <a href="#" onclick="myFunction()">BAND</a>
   <a href="#" onclick="myFunction()">TOUR</a>
   <a href="#" onclick="myFunction()">CONTACT</a>
   <a href="#" onclick="myFunction()">MERCH</a>
 </div>
 <script>
-var myIndex = 0;
-carousel();
 
+	function myFunction() {
+		console.log('ok');
+	  var mobMenu = document.getElementById("mob-menu");
+	  console.log('mobMenu', mobMenu)
 
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+	  if (mobMenu.className.indexOf("show") == -1) {
+	    mobMenu.className += " show";
+	  } else { 
+	    mobMenu.className = mobMenu.className.replace(" show", "");
+	  }
+	}
 
-
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+</script> 
 </body>
 </html>
