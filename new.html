@@ -17,49 +17,23 @@
 		</ul>
 	</div>
 </div>
-	<!-- <input type="button" onclick="this.hidden=true" value="Нажми, чтобы спрятать"> -->
-<!-- <script>
-	 class Menu {
-    handleEvent(event) {
-      let method = 'on' + event.type[0].toUpperCase() + event.type.slice(1);
-      this[method](event);
-    }
-
-    onMousedown() {
-      elem.innerHTML = "Кнопка мыши нажата";
-    }
-
-    onMouseup() {
-      elem.innerHTML += "...и отжата.";
-    }
-  }
-
-  let menu = new Menu();
-  elem.addEventListener('mousedown', menu);
-  elem.addEventListener('mouseup', menu);
-</script> -->
-<!-- <script>
-	function tstjs(){
-		document.write(js успешно запустился)
-	}
-</script>
-	<input type="button" id="elem" onclick="alert('Было')" value="Нажми меня"> -->
-<!-- <script>
-  elem.onclick = function() { // перезапишет существующий обработчик
-    alert('Станет'); // выведется только это
-  };
-</script> -->
-<!-- <script>
-  function countRabbits() {
-    for(let i=1; i<=3; i++) {
-      alert("Кролик номер " + i);
-    }
-  }
-</script>
-
-<input type="button" onclick="countRabbits()" value="Считать кроликов!"> -->
+<form name="search">
+    <input type="text" name="key" placeholder="Введите ключ"></input>
+    <input type="button" name="print" value="Печать" />
+</form>
+<div id="printBlock"></div>
 <script>
-	
+	function printForm(e){
+	    var keyBox = document.search.key;
+	    var val = keyBox.value;
+	    var printBlock = document.getElementById("printBlock");
+	    var pElement = document.createElement("p");
+	    pElement.textContent = val;
+	    printBlock.appendChild(pElement);
+	}
+	 
+	var printButton = document.search.print;
+	printButton.addEventListener("click", printForm);
 </script>
 </body>
 </html>
