@@ -17,23 +17,86 @@
 		</ul>
 	</div>
 </div>
-<form name="search">
-    <input type="text" name="key" placeholder="Введите ключ"></input>
-    <input type="button" name="print" value="Печать" />
+<!-- <script>
+	let mess;
+	message = 'Hello!';
+
+	alert(message);
+
+</script>  -->
+<!-- <script>
+	let user = 'Karina',
+	 age = 19,
+	 message = 'Hello';
+</script> -->
+<!-- <script>
+	let i = 0;
+while (i < 3) {
+  alert( i );
+  i++;
+}
+</script> -->
+<!-- <script>
+	let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Введите число", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Сумма: ' + sum );
+</script> -->
+<!-- <form name="selectForm">
+  <p>
+    <label for="musicTypes">Выберите некоторые жанры музыки, а затем нажмите на кнопку ниже:</label>
+    <select id="musicTypes" name="musicTypes" multiple="multiple">
+      <option selected="selected">R&B</option>
+      <option>Jazz</option>
+      <option>Blues</option>
+      <option>New Age</option>
+      <option>Classical</option>
+      <option>Opera</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="Как много выбрано?" /></p>
 </form>
-<div id="printBlock"></div>
+
 <script>
-	function printForm(e){
-	    var keyBox = document.search.key;
-	    var val = keyBox.value;
-	    var printBlock = document.getElementById("printBlock");
-	    var pElement = document.createElement("p");
-	    pElement.textContent = val;
-	    printBlock.appendChild(pElement);
+function howMany(selectObject) {
+  var numberSelected = 0;
+  for (var i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function(){
+  alert('Выбрано элементов: ' + howMany(document.selectForm.musicTypes))
+});
+</script> -->
+<!-- <script>
+	var i = 0;
+	var n = 0;
+	while (i < 5) {
+	  i++;
+	  if (i == 3) {
+	    continue;
+	  }
+	  n += i;
 	}
-	 
-	var printButton = document.search.print;
-	printButton.addEventListener("click", printForm);
-</script>
+</script> -->
+<!-- <script>
+		do {
+	  i = 1;
+	  console.log(i);
+	} while (i < 5);
+</script> -->
 </body>
 </html>
