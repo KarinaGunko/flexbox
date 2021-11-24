@@ -155,6 +155,8 @@
 
 // let fruits = ["apple"];
 
+//// Методи масивів.
+
 // fruits.push("orange", "pearа");
 // fruits.unshift("pineapple",);
 
@@ -209,6 +211,20 @@
 // console.log('array4', array4);
 // console.log('array5', array5);
 
+// const a = [1, 2, 3, 4, 5].reduce(item,0);
+// function item(item, a) {
+// 	return item + a;
+// }
+
+// console.log(a);
+
+
+// const item = [1, 2, 3, 4, 5].reduce((item, a) => {
+// 	return item + a;
+// }) 
+// console.log(item); // сума в сіх чисел.
+
+
 // split
 
 // const str = '';
@@ -244,6 +260,48 @@
 
 // splice 
 
-let k = [33, 44, 55, 66, 77, 88];
-k.splice(2, 2, 'hi', 'dd', 'tt', 'rr' );
-console.log(k);
+// let k = [33, 44, 55, 66, 77, 88];
+// k.splice(2, 2, 'hi', 'dd', 'tt', 'rr' );
+// console.log(k);
+
+
+/// spread
+
+// const a = [3, 4, 5];
+// const b = ['c', 'd', 'e'];
+
+// const c = [...a, ...b];
+// console.log(c);
+
+// clone
+ 
+// const d = [...b];
+// console.log(d);
+
+//string -> array
+
+// const e = [...'hello'];
+// console.log(e);
+
+//set -> array
+
+// const f = [...new Set([1, 1, 2, 3, 4, 2])];
+// console.log(f);
+
+// function test(){
+// 	console.log([...arguments]);
+// }
+
+// test(3, 4, 5, 6, 7);
+
+//// формат json
+
+// const title = {
+// 	name: "Karina",
+// 	age: 19,
+
+// 	tostring() {
+// 		return `{{name: "${this.name}", age: ${this.age}}`;
+// 	}
+// };
+// console.log(user);
