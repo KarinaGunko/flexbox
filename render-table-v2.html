@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/form-function.css">
+</head>
+<body>
+	<button id="render-btn" onclick="renderTable(getData())">Render Table</button>
+   <table>
+   		<thead>
+   			<tr>
+   				<th>User name</th>
+   				<th>User age</th>
+   			</tr>
+   		</thead>
+   		<tbody id="table-content">
+   			<tr>
+   				<td>Name1</td>
+   				<td>age1</td>
+   			</tr>
+   		</tbody>
+   </table>
+
+   <script type="text/javascript">
+   	    function getUserData() {
+   	    	const user = {
+				name: 'Karina',
+			    age: 19
+			}
+			const user2 = {
+				name: 'Igor',
+			    age: 27
+			}
+			const user3 = {
+				name: 'Sahsa',
+			    age: 29
+			};
+			const user4 = {
+				name: 'Vika',
+			    age: 16
+			};
+			const user5 = {
+				name: 'Mahsa',
+			    age: 39
+			};
+
+			return [user, user2, user3, user4, user5];
+   	    }
+
+   	    const 
+
+	   	function renderTable(data) {
+	        const arr = data;
+			
+			const tableBody = document.getElementById('table-content');
+
+		    let content = '';
+		     
+		     for (let i = 0; i < arr.length; i++) {
+		     	const userName = arr[i].name;
+		     	const userAge = arr[i].age;
+
+		     	console.log('item', arr[i]);
+
+		     	content += `<tr>
+		   			<td>${userName}</td>
+		   			<td>${userAge}</td>
+		   		</tr>`;
+		     }
+
+		     tableBody.innerHTML = content;
+
+		   console.log('content', content)
+		}
+   	
+   </script>
+
+</body>
+</html>

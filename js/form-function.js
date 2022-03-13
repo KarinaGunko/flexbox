@@ -135,3 +135,75 @@
 // let one = person1.fullName.call(person2); 
 
 // console.log(one);
+
+
+// function name () {
+// 	return {};
+// }
+// console.log('');
+
+
+
+// function myFunction(a, b) {
+// 	return a + b;	
+// };
+// const sum1 = myFunction(12, 12);
+// console.log(sum1);
+
+// const sum1 = myFunction(20, 30);
+// console.log(sum1);
+
+
+
+
+// function myFunction(a, b) {
+// 	return {
+// 		a,
+// 		b,
+// 		sum: a + b,
+
+// 	};
+// };
+// const sum1 = myFunction(2, 3);
+// console.log(sum1);
+
+// function  myFunction(){
+//   let num1 = Number(document.getElementById("num1").value);
+//   let num2 = Number(document.getElementById("num2").value);
+//   let num3 = Number(document.getElementById("num3").value);
+//   let result = num1 + num2 + num3;
+
+//   document.getElementById("result").innerHTML = result;
+//  };
+// console.log(result);
+
+
+// let formData = new FormData();
+// formData.append('key1', 'value1');
+// formData.append('key2', 'value2');
+
+// for(let [name, value] of formData) {
+//   alert(`firstname = Gunko`); 
+//   alert(`lastname = Karina`); 
+// }
+
+
+// let formData = new form(2, 3);
+// formData.Number(document.getElementById("key1").value);
+// formData.Number(document.getElementById("key2").value);
+// for(let [key1, value] of formData) {
+//   alert((`firstname = Gunko`));
+// }
+
+
+function getfullName(){
+	event.preventDefault();
+
+	let firstName = document.getElementById("firstName").value;
+	let lastName = document.getElementById("lastName").value;
+	console.log(firstName);
+	console.log(lastName);
+	document.getElementById("result").innerHTML = firstName + ' ' + lastName;
+
+   
+};

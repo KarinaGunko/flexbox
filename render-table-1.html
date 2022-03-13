@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/form-function.css">
+</head>
+<body>
+	<button onclick="renderTable(getData(), 'table1')">Render Table</button>
+	<button onclick="renderTable(childrens, 'table2')">Render Table</button>
+   <table>
+   		<thead>
+   			<tr>
+   				<th>User name</th>
+   				<th>User age</th>
+   			</tr>
+   		</thead>
+   		<tbody id="table1">
+   			<tr>
+   				<td>Name1</td>
+   				<td>age1</td>
+   			</tr>
+   		</tbody>
+
+   </table>
+   <table>
+   		<thead>
+   			<tr>
+   				<th>User name</th>
+   				<th>User age</th>
+   			</tr>
+   		</thead>
+   		<tbody id="table2">
+   			<tr>
+   				<td>Name1</td>
+   				<td>age1</td>
+   			</tr>
+   		</tbody>
+
+   </table>
+
+   <script type="text/javascript">
+
+       var childrens = [
+
+   	         {
+				name: 'Vika',
+			    age: 19
+			},
+		    {
+				name: 'Alona',
+			    age: 19
+			},
+		     {
+				name: 'Dahsa',
+			    age: 19
+			},
+	         {
+				name: 'Marina',
+			    age: 19
+			 },
+		    {
+				name: 'Mahsa',
+			    age: 19
+			}
+		];
+
+         
+
+   	    function getData() {
+   	    	const user = {
+				name: 'Karina',
+			    age: 19
+			}
+			const user2 = {
+				name: 'Igor',
+			    age: 27
+			}
+			const user3 = {
+				name: 'Sahsa',
+			    age: 29
+			};
+			const user4 = {
+				name: 'Vika',
+			    age: 16
+			};
+			const user5 = {
+				name: 'Mahsa',
+			    age: 39
+			};
+
+			return [user, user2, user3, user4, user5];
+   	    }
+
+	   	function renderTable(data, ololo) {
+	        console.log('data',data);
+			
+			const tableBody = document.getElementById(ololo);
+
+		    let content = '';
+		     
+		     for (let i = 0; i < data.length; i++) {
+		     	const userName = data[i].name;
+		     	const userAge = data[i].age;
+
+		     	console.log('item', data[i]);
+
+		     	content += `<tr>
+		   			<td>${userName}</td>
+		   			<td>${userAge}</td>
+		   		</tr>`;
+		     }
+
+		     tableBody.innerHTML = content;
+
+		   console.log('content', content);
+		}
+   	
+   </script>
+
+</body>
+</html>

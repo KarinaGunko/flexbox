@@ -12,11 +12,11 @@
 // function myFunction(button) {
 // 	console.log(button);
 // };
-function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "ndex2.txt");
-  xhttp.send();
-}
+// function loadDoc() {
+//   const xhttp = new XMLHttpRequest();
+//   xhttp.onload = function() {
+//     document.getElementById("demo").innerHTML = this.responseText;
+//   }
+//   xhttp.open("GET", "index2.txt");
+//   xhttp.send();
+// }
