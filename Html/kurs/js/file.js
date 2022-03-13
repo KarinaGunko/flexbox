@@ -1,11 +1,18 @@
-let list = document.querySelector('.list');
+// let list = document.querySelector('.list');
 
 
-list.addEventListener('mousemove', function(event) {
-	console.log('event', event.target);
-});
+// list.addEventListener('mousemove', function(event) {
+// 	console.log('event', event.target);
+// });
 
-function addEventListener (eventName, callbackFunction)
-{
-callbackFunction() 	
+// function addEventListener (eventName, callbackFunction)
+// {
+// callbackFunction() 	
+// }
+
+
+const li = document.getElementById('one');
+
+li.onclick = function () {
+	this.style.background = 'red';
 }

@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+}
+/*.btn {
+	background-color: red;
+	display: flex;
+	padding: 10px 15px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0,35s;
+}
+.btn:hover {
+	background-color: yellow;
+	color: #000;
+}*/
+.btn li {
+	margin: 12px;
+	padding: 12px;
+	list-style: none;
+}*/
+#one {
+	padding: 12px;
+	margin: 12px;
+}
+.btn {
+	display: flex;
+	background-color: #ccc;
+}
+.btn li {
+	margin-left: 23px;
+	color: green;
+	list-style: none;
+}
