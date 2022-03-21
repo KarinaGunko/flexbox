@@ -1,10 +1,19 @@
+.active {
+	background: red;
+	color: yellow;
+	padding: 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+
+}
 .menu {
 	display: flex;
+
 }
 .menu li {
 	list-style: none;
 }
 .menu a {
 	text-decoration: none;
-	color: #000;
+	margin: 30px;
 }
